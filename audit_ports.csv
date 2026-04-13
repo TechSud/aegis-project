@@ -1,0 +1,2 @@
+port,state,service,version
+2222/tcp,open,ssh,OpenSSH 9.6p1 Ubuntu 3ubuntu13.15 (Ubuntu Linux; protocol 2.0)

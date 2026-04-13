@@ -1,0 +1,64 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-04-13 14:25 UTC
+Nmap scan report for livebox.home (192.168.1.1)
+Host is up (0.00042s latency).
+MAC Address: 2C:93:FB:CE:DC:E0 (Sercomm France Sarl)
+Nmap scan report for alarm25a034.home (192.168.1.9)
+Host is up (0.0011s latency).
+MAC Address: 00:13:A1:25:A0:34 (Crow Electronic Engeneering)
+Nmap scan report for ruben.home (192.168.1.11)
+Host is up (0.13s latency).
+MAC Address: 94:BB:43:9C:A2:E6 (Unknown)
+Nmap scan report for msi.home (192.168.1.15)
+Host is up (0.32s latency).
+MAC Address: 38:FC:98:C6:81:67 (Intel Corporate)
+Nmap scan report for msi-1.home (192.168.1.16)
+Host is up (0.32s latency).
+MAC Address: 04:EC:D8:7E:11:66 (Intel Corporate)
+Nmap scan report for iphone-5.home (192.168.1.21)
+Host is up (0.12s latency).
+MAC Address: 8A:A7:E3:16:8E:2E (Unknown)
+Nmap scan report for cash.home (192.168.1.22)
+Host is up (0.23s latency).
+MAC Address: 60:E9:AA:1E:38:3F (Cloud Network Technology Singapore PTE.)
+Nmap scan report for device-22.home (192.168.1.23)
+Host is up (0.0015s latency).
+MAC Address: F0:25:72:80:F4:C0 (Cisco Systems)
+Nmap scan report for 192.168.1.28
+Host is up (0.13s latency).
+MAC Address: 92:75:4D:96:D4:48 (Unknown)
+Nmap scan report for device-145.home (192.168.1.32)
+Host is up (0.22s latency).
+MAC Address: A2:44:53:75:51:73 (Unknown)
+Nmap scan report for system-1.home (192.168.1.33)
+Host is up (0.00024s latency).
+MAC Address: BC:24:11:B5:33:AC (Unknown)
+Nmap scan report for pfsense.home (192.168.1.35)
+Host is up (0.0014s latency).
+MAC Address: 90:EC:77:74:ED:03 (silicom)
+Nmap scan report for deep.home (192.168.1.36)
+Host is up (0.22s latency).
+MAC Address: 44:E5:17:BB:BE:BC (Intel Corporate)
+Nmap scan report for win-5tn5mc86a8j.home (192.168.1.38)
+Host is up (0.00031s latency).
+MAC Address: BC:24:11:C2:D7:57 (Unknown)
+Nmap scan report for techsud.home (192.168.1.44)
+Host is up (0.00028s latency).
+MAC Address: BC:24:11:27:5E:C1 (Unknown)
+Nmap scan report for ubuntu-server-2.home (192.168.1.46)
+Host is up (0.00031s latency).
+MAC Address: BC:24:11:0B:57:40 (Unknown)
+Nmap scan report for device-15.home (192.168.1.101)
+Host is up (0.00017s latency).
+MAC Address: 24:6E:96:09:17:20 (Dell)
+Nmap scan report for device-8.home (192.168.1.102)
+Host is up (0.00015s latency).
+MAC Address: EC:F4:BB:C3:4E:78 (Dell)
+Nmap scan report for device-7.home (192.168.1.103)
+Host is up (0.00021s latency).
+MAC Address: EC:F4:BB:D7:88:78 (Dell)
+Nmap scan report for desktop-lktg8c1.home (192.168.1.149)
+Host is up (0.30s latency).
+MAC Address: 9C:2F:9D:A2:97:E3 (Liteon Technology)
+Nmap scan report for techsud-server.home (192.168.1.43)
+Host is up.
+Nmap done: 256 IP addresses (21 hosts up) scanned in 3.97 seconds

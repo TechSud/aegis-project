@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "date": "2026-04-13T14:28:21.671083",
+    "hostname": "techsud-server",
+    "auditor": "AEGIS - Audit automatise",
+    "target": "192.168.1.43"
+  },
+  "open_ports": [
+    {
+      "port": "2222/tcp",
+      "state": "open",
+      "service": "ssh",
+      "version": "OpenSSH 9.6p1 Ubuntu 3ubuntu13.15 (Ubuntu Linux; protocol 2.0)"
+    }
+  ],
+  "ssh_hardening": {
+    "PermitRootLogin": {
+      "expected": "no",
+      "found": "no",
+      "compliant": true
+    },
+    "PasswordAuthentication": {
+      "expected": "no",
+      "found": "no",
+      "compliant": true
+    },
+    "Port": {
+      "expected": "2222",
+      "found": "2222",
+      "compliant": true
+    },
+    "PubkeyAuthentication": {
+      "expected": "yes",
+      "found": "yes",
+      "compliant": true
+    },
+    "MaxAuthTries": {
+      "expected": "3",
+      "found": "3",
+      "compliant": true
+    }
+  },
+  "firewall": {
+    "active": true,
+    "rules": "Status: active\nLogging: on (low)\nDefault: deny (incoming), allow (outgoing), disabled (routed)\nNew profiles: skip\n\nTo                         Action      From\n--                         ------      ----\n2222/tcp                   ALLOW IN    Anywhere                  \n2222/tcp (v6)              ALLOW IN    Anywhere (v6)             \n\n"
+  },
+  "fail2ban": {
+    "active": true,
+    "details": "Status for the jail: sshd\n|- Filter\n|  |- Currently failed:\t0\n|  |- Total failed:\t0\n|  `- File list:\t/var/log/auth.log\n`- Actions\n   |- Currently banned:\t0\n   |- Total banned:\t0\n   `- Banned IP list:\t\n",
+    "currently_banned": 0
+  },
+  "users": [
+    {
+      "username": "root",
+      "uid": "0",
+      "gid": "0",
+      "home": "/root",
+      "shell": "/bin/bash"
+    },
+    {
+      "username": "techsud-server",
+      "uid": "1000",
+      "gid": "1000",
+      "home": "/home/techsud-server",
+      "shell": "/bin/bash"
+    },
+    {
+      "username": "admin_techsud",
+      "uid": "1001",
+      "gid": "1001",
+      "home": "/home/admin_techsud",
+      "shell": "/bin/bash"
+    },
+    {
+      "username": "dev_techsud",
+      "uid": "1002",
+      "gid": "1002",
+      "home": "/home/dev_techsud",
+      "shell": "/bin/bash"
+    },
+    {
+      "username": "stagiaire_techsud",
+      "uid": "1003",
+      "gid": "1003",
+      "home": "/home/stagiaire_techsud",
+      "shell": "/bin/bash"
+    }
+  ],
+  "listening_services": "Netid State  Recv-Q Send-Q                     Local Address:Port Peer Address:PortProcess                                                \nudp   UNCONN 0      0                             127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=719,fd=16))             \nudp   UNCONN 0      0                          127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=719,fd=14))             \nudp   UNCONN 0      0                     192.168.1.43%ens18:68        0.0.0.0:*    users:((\"systemd-network\",pid=909,fd=22))             \nudp   UNCONN 0      0      [fe80::be24:11ff:fe03:bc52]%ens18:546          [::]:*    users:((\"systemd-network\",pid=909,fd=12))             \ntcp   LISTEN 0      4096                             0.0.0.0:2222      0.0.0.0:*    users:((\"sshd\",pid=3767,fd=3),(\"systemd\",pid=1,fd=91))\ntcp   LISTEN 0      4096                          127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=719,fd=17))             \ntcp   LISTEN 0      4096                       127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=719,fd=15))             \ntcp   LISTEN 0      4096                                [::]:2222         [::]:*    users:((\"sshd\",pid=3767,fd=4),(\"systemd\",pid=1,fd=93))\n",
+  "summary": {
+    "ssh_compliance": "5/5",
+    "firewall_active": true,
+    "fail2ban_active": true,
+    "total_open_ports": 1,
+    "total_users_with_shell": 5,
+    "risk_level": "LOW"
+  }
+}
