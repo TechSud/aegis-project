@@ -1,0 +1,6 @@
+total 20
+drwxr-xr-x 5 root root         4096 avril 13 14:20 .
+drwxr-xr-x 3 root root         4096 avril 13 14:20 ..
+drwxr-x--- 2 root admins       4096 avril 13 14:20 confidentiel
+drwxrwx--- 2 root developpeurs 4096 avril 13 14:20 projets
+drwxr-xr-x 2 root root         4096 avril 13 14:20 public

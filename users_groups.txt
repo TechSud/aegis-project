@@ -1,0 +1,3 @@
+admins:x:1004:admin_techsud
+developpeurs:x:1005:dev_techsud
+stagiaires:x:1006:stagiaire_techsud
